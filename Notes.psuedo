@@ -1,0 +1,11 @@
+node v18 make sure it is this version.
+
+npm create vite@latest
+
+y
+
+keep on vanilla and press enter
+
+We are using javascript
+
+cd app to change directory, make sure the second spot says app. Then type npm i. I means install.
