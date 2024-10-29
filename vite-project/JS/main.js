@@ -1,4 +1,8 @@
 import "../CSS/style.css";
+
+const card = document.querySelectorAll(".card");
+cards = Array.from(card);
+
 // import javascriptLogo from './javascript.svg'
 // import viteLogo from '/vite.svg'
 // import { setupCounter } from './counter.js'
