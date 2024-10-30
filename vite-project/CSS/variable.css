@@ -1,0 +1,15 @@
+:root{
+    --light-blue: #2998ff;
+    --dark-blue: #135cc5;
+    --light-red: #f87171;
+    --dark-red: #dc2626;
+  
+    --h1: 7.594rem;
+  }
+  
+  .warm{
+    --primary: var(--light-red)
+  }
+  .cool{
+    --primary: var(--light-blue);
+  }

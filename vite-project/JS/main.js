@@ -1,7 +1,13 @@
 import "../CSS/style.css";
+import { petCareItems } from "product.js";
 
-const card = document.querySelectorAll(".card");
-cards = Array.from(card);
+petCareItems.filter;
+// coldColor = document.querySelector("#coldColor");
+
+// coldColor.addEventListener("submit", function (coldColorFunction) {
+//   coldColorFunction.preventDefault();
+//   document.insertAdjacentHtml("")
+// });
 
 // import javascriptLogo from './javascript.svg'
 // import viteLogo from '/vite.svg'
