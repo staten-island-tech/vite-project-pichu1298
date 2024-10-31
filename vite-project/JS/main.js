@@ -1,7 +1,44 @@
 import "../CSS/style.css";
 import { petCareItems } from "product.js";
 
-const dog = petCareItems.forEach((petCareItems.animal = "dog"));
+const dog = petCareItems.forEach(petCareItems.animal === "Dog");
+
+const cat = petCareItems.forEach(petCareItems.animal === "Cat");
+
+const hamster = petCareItems.forEach(petCareItems.animal === "Hamster");
+
+const fish = petCareItems.forEach(petCareItems.animal === "Fish");
+
+const rabbit = petCareItems.forEach(petCareItems.animal === "Rabbit");
+
+const bird = petCareItems.forEach(petCareItems.animal === "Bird");
+
+const belowTenDollars = petCareItems.forEach(petCareItems.price < 10);
+
+const between10and20Dollars = petCareItems.forEach(
+  petCareItems.price > 10 && petCareItems.price < 20
+);
+
+const over20Dollars = petCareItems.forEach(petCareItems.price > 20);
+
+const fromAmazon = petCareItems.forEach(petCareItems.stores === "Amazon");
+
+const fromPetco = petCareItems.forEach(petCareItems.stores === "Petco");
+
+const fromChewy = petCareItems.forEach(petCareItems.stores === "Chewy");
+
+const fromPetSmart = petCareItems.forEach(petCareItems.stores === "PetSmart");
+
+const DOMSelectors = {
+  header: document.querySelectorAll("h1"),
+  description: document.querySelectorAll(".card-desc"),
+  items: document.querySelectorAll("li"),
+  container: document.querySelector(".container"),
+  card: document.querySelectorAll(".card"),
+};
+
+container.insertAdjacentHtml("beforeend");
+
 // coldColor = document.querySelector("#coldColor");
 
 // coldColor.addEventListener("submit", function (coldColorFunction) {
