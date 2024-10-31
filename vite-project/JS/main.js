@@ -1,7 +1,7 @@
 import "../CSS/style.css";
 import { petCareItems } from "product.js";
 
-petCareItems.filter;
+const dog = petCareItems.forEach((petCareItems.animal = "dog"));
 // coldColor = document.querySelector("#coldColor");
 
 // coldColor.addEventListener("submit", function (coldColorFunction) {

@@ -5,7 +5,7 @@ const petCareItems = [
     alt_text: "",
     price: "$12.99",
     stores: ["Petco", "Amazon", "Chewy"],
-    animal: "Dog",
+    animal: ["Dog"],
   },
   {
     title: "Self-Cleaning Litter Box",
@@ -13,15 +13,15 @@ const petCareItems = [
     alt_text: "",
     price: "$149.99",
     stores: ["Amazon", "Chewy", "PetSmart"],
-    animal: "Cat",
+    animal: ["Cat"],
   },
   {
-    title: "Small Animal Hideout House",
+    title: "Hamster Hideout House",
     image_url: "",
     alt_text: "",
     price: "$8.99",
     stores: ["Petco", "Amazon"],
-    animal: "Small Animal",
+    animal: ["Hamster"],
   },
   {
     title: "Dental Chews for Dogs",
@@ -29,7 +29,7 @@ const petCareItems = [
     alt_text: "",
     price: "$9.99",
     stores: ["PetSmart", "Chewy", "Amazon"],
-    animal: "Dog",
+    animal: ["Dog"],
   },
   {
     title: "Catnip-Infused Play Ball",
@@ -37,7 +37,7 @@ const petCareItems = [
     alt_text: "",
     price: "$4.99",
     stores: ["Chewy", "Petco"],
-    animal: "Cat",
+    animal: ["Cat"],
   },
   {
     title: "Aquarium Cleaning Kit",
@@ -45,7 +45,7 @@ const petCareItems = [
     alt_text: "",
     price: "$19.99",
     stores: ["Amazon", "Petco"],
-    animal: "Fish",
+    animal: ["Fish"],
   },
   {
     title: "Organic Bird Seed Mix",
@@ -53,7 +53,7 @@ const petCareItems = [
     alt_text: "",
     price: "$14.99",
     stores: ["PetSmart", "Amazon"],
-    animal: "Bird",
+    animal: ["Bird"],
   },
   {
     title: "Pet First Aid Kit",
@@ -61,7 +61,7 @@ const petCareItems = [
     alt_text: "",
     price: "$24.99",
     stores: ["Amazon", "Chewy"],
-    animal: "All",
+    animal: ["Dog", "Cat", "Hamster", "Rabbit", "Bird"],
   },
   {
     title: "Dog Paw Balm",
@@ -69,7 +69,7 @@ const petCareItems = [
     alt_text: "",
     price: "$11.99",
     stores: ["Chewy", "PetSmart", "Amazon"],
-    animal: "Dog",
+    animal: ["Dog"],
   },
   {
     title: "Cat Climbing Tree",
@@ -77,7 +77,7 @@ const petCareItems = [
     alt_text: "",
     price: "$89.99",
     stores: ["Petco", "Amazon"],
-    animal: "Cat",
+    animal: ["Cat"],
   },
   {
     title: "Hamster Running Wheel",
@@ -85,7 +85,7 @@ const petCareItems = [
     alt_text: "",
     price: "$6.99",
     stores: ["Petco", "Chewy"],
-    animal: "Small Animal",
+    animal: ["Hamster"],
   },
   {
     title: "Aquarium LED Light",
@@ -93,7 +93,7 @@ const petCareItems = [
     alt_text: "",
     price: "$29.99",
     stores: ["Amazon", "PetSmart"],
-    animal: "Fish",
+    animal: ["Fish"],
   },
   {
     title: "Dog Training Treats",
@@ -101,7 +101,7 @@ const petCareItems = [
     alt_text: "",
     price: "$7.99",
     stores: ["Chewy", "Petco"],
-    animal: "Dog",
+    animal: ["Dog"],
   },
   {
     title: "Bird Bath Perch",
@@ -109,7 +109,7 @@ const petCareItems = [
     alt_text: "",
     price: "$5.99",
     stores: ["PetSmart", "Amazon"],
-    animal: "Bird",
+    animal: ["Bird"],
   },
   {
     title: "Heated Cat Bed",
@@ -117,7 +117,7 @@ const petCareItems = [
     alt_text: "",
     price: "$39.99",
     stores: ["Amazon", "Chewy"],
-    animal: "Cat",
+    animal: ["Cat"],
   },
   {
     title: "Automatic Fish Feeder",
@@ -125,7 +125,7 @@ const petCareItems = [
     alt_text: "",
     price: "$24.99",
     stores: ["PetSmart", "Amazon"],
-    animal: "Fish",
+    animal: ["Fish"],
   },
   {
     title: "Rabbit Chew Sticks",
@@ -133,7 +133,7 @@ const petCareItems = [
     alt_text: "",
     price: "$4.49",
     stores: ["Petco", "Amazon"],
-    animal: "Small Animal",
+    animal: ["Rabbit"],
   },
   {
     title: "Dog Cooling Vest",
@@ -141,7 +141,7 @@ const petCareItems = [
     alt_text: "",
     price: "$34.99",
     stores: ["Chewy", "Amazon"],
-    animal: "Dog",
+    animal: ["Dog"],
   },
   {
     title: "Bird Cuddle Swing",
@@ -149,7 +149,7 @@ const petCareItems = [
     alt_text: "",
     price: "$6.99",
     stores: ["PetSmart", "Chewy"],
-    animal: "Bird",
+    animal: ["Bird"],
   },
   {
     title: "Fish Tank Water Filter",
@@ -157,6 +157,6 @@ const petCareItems = [
     alt_text: "",
     price: "$12.99",
     stores: ["Amazon", "Petco"],
-    animal: "Fish",
+    animal: ["Fish"],
   },
 ];
