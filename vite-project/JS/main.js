@@ -1,33 +1,33 @@
 import "../CSS/style.css";
-import { petCareItems } from "product.js";
+import { petCareItems } from "./products.js";
 
-const dog = petCareItems.forEach(petCareItems.animal === "Dog");
+// const dog = petCareItems.forEach(petCareItems.animal === "Dog");
 
-const cat = petCareItems.forEach(petCareItems.animal === "Cat");
+// const cat = petCareItems.forEach(petCareItems.animal === "Cat");
 
-const hamster = petCareItems.forEach(petCareItems.animal === "Hamster");
+// const hamster = petCareItems.forEach(petCareItems.animal === "Hamster");
 
-const fish = petCareItems.forEach(petCareItems.animal === "Fish");
+// const fish = petCareItems.forEach(petCareItems.animal === "Fish");
 
-const rabbit = petCareItems.forEach(petCareItems.animal === "Rabbit");
+// const rabbit = petCareItems.forEach(petCareItems.animal === "Rabbit");
 
-const bird = petCareItems.forEach(petCareItems.animal === "Bird");
+// const bird = petCareItems.forEach(petCareItems.animal === "Bird");
 
-const belowTenDollars = petCareItems.forEach(petCareItems.price < 10);
+// const belowTenDollars = petCareItems.forEach(petCareItems.price < 10);
 
-const between10and20Dollars = petCareItems.forEach(
-  petCareItems.price > 10 && petCareItems.price < 20
-);
+// const between10and20Dollars = petCareItems.forEach(
+//   petCareItems.price > 10 && petCareItems.price < 20
+// );
 
-const over20Dollars = petCareItems.forEach(petCareItems.price > 20);
+// const over20Dollars = petCareItems.forEach(petCareItems.price > 20);
 
-const fromAmazon = petCareItems.forEach(petCareItems.stores === "Amazon");
+// const fromAmazon = petCareItems.forEach(petCareItems.stores === "Amazon");
 
-const fromPetco = petCareItems.forEach(petCareItems.stores === "Petco");
+// const fromPetco = petCareItems.forEach(petCareItems.stores === "Petco");
 
-const fromChewy = petCareItems.forEach(petCareItems.stores === "Chewy");
+// const fromChewy = petCareItems.forEach(petCareItems.stores === "Chewy");
 
-const fromPetSmart = petCareItems.forEach(petCareItems.stores === "PetSmart");
+// const fromPetSmart = petCareItems.forEach(petCareItems.stores === "PetSmart");
 
 const DOMSelectors = {
   header: document.querySelectorAll("h1"),
@@ -36,8 +36,20 @@ const DOMSelectors = {
   container: document.querySelector(".container"),
   card: document.querySelectorAll(".card"),
 };
-
-container.insertAdjacentHtml("beforeend");
+for (let i = 0; i < petCareItems.length; i++) {
+  DOMSelectors.container.insertAdjacentHTML(
+    "beforeend",
+    `<div class = "card">
+<h1>${petCareItems[i].title}</h1>
+<img src="${petCareItems[i].image_url}" alt="${petCareItems[i].alt_text}">
+<ul>
+  <li>Price: $${petCareItems[i].price} </li>
+  <li>Store(s): ${petCareItems[i].stores}</li>
+  <li>Animal(s): ${petCareItems[i].animal}</li>
+</ul>
+</div>`
+  );
+}
 
 // coldColor = document.querySelector("#coldColor");
 

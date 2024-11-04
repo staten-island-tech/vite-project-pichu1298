@@ -1,4 +1,4 @@
-const petCareItems = [
+export const petCareItems = [
   {
     title: "Eco-Friendly Dog Chew Toy",
     image_url: "",

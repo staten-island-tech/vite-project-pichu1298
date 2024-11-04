@@ -14,10 +14,23 @@ h1{
 
 h1,h2,h3,h4,h5,h6,*{
   text-align: center;
+  
+}
+li{
+  font-size: 2rem;
 }
 
 body{
   background-color: var(--primary);
+}
+img {
+  size: 100%;
+}
+button{
+  background-color: var(--secondary);
+  width: 22%;
+  margin: 2%;
+  font-size: 2rem;
 }
 
 /* :root {
