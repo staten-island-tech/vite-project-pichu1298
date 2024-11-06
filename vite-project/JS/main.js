@@ -1,8 +1,6 @@
 import "../CSS/style.css";
 import { petCareItems } from "./products.js";
 
-// const dog = petCareItems.forEach(petCareItems.animal === "Dog");
-
 // const cat = petCareItems.forEach(petCareItems.animal === "Cat");
 
 // const hamster = petCareItems.forEach(petCareItems.animal === "Hamster");
@@ -50,6 +48,30 @@ for (let i = 0; i < petCareItems.length; i++) {
 </div>`
   );
 }
+
+const dog = petCareItems.filter(animalDog);
+
+function animalDog() {
+  petCareItems.animal === "Dog";
+}
+
+dogButton = document.querySelector("#dogButton");
+dogButton.addEventListener("submit", function (event) {
+  event.preventDefault();
+  DOMSelectors.card.remove();
+  DOMSelectors.container.insertAdjacentHTML(
+    "beforeend",
+    `<div class = "card">
+  <h1>${dog.title}</h1>
+  <img src="${dog.image_url}" alt="${dog.alt_text}">
+  <ul>
+    <li>Price: $${dog.price} </li>
+    <li>Store(s): ${dog.stores}</li>
+    <li>Animal(s): ${dog.animal}</li>
+  </ul>
+  </div>`
+  );
+});
 
 // coldColor = document.querySelector("#coldColor");
 
