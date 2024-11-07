@@ -49,29 +49,38 @@ for (let i = 0; i < petCareItems.length; i++) {
   );
 }
 
-const dog = petCareItems.filter(animalDog);
+// const dog = petCareItems.map((dog) => dog.animal);
 
-function animalDog() {
-  petCareItems.animal === "Dog";
-}
+// const dog = petCareItems.filter(animalDog);
+// function animalDog() {
+//   petCareItems.animal === "Dog";
+// }
+// console.log(dog);
 
-dogButton = document.querySelector("#dogButton");
-dogButton.addEventListener("submit", function (event) {
-  event.preventDefault();
-  DOMSelectors.card.remove();
-  DOMSelectors.container.insertAdjacentHTML(
-    "beforeend",
-    `<div class = "card">
-  <h1>${dog.title}</h1>
-  <img src="${dog.image_url}" alt="${dog.alt_text}">
-  <ul>
-    <li>Price: $${dog.price} </li>
-    <li>Store(s): ${dog.stores}</li>
-    <li>Animal(s): ${dog.animal}</li>
-  </ul>
-  </div>`
-  );
-});
+// // petCareItems.filter((dog) => petCareItems.animal.includes("Dog"));
+
+// function createdSorted() {
+//   document.querySelector(".container").innerHtml = "";
+//   //load new array
+// }
+
+// let dogButton = document.querySelector("#dogButton");
+// dogButton.addEventListener("click", function (event) {
+//   event.preventDefault();
+//   createdSorted();
+//   DOMSelectors.container.insertAdjacentHTML(
+//     "beforeend",
+//     `<div class = "card">
+//   <h1>${dog.title}</h1>
+//   <img src="${dog.image_url}" alt="${dog.alt_text}">
+//   <ul>
+//     <li>Price: $${dog.price} </li>
+//     <li>Store(s): ${dog.stores}</li>
+//     <li>Animal(s): ${dog.animal}</li>
+//   </ul>
+//   </div>`
+//   );
+// });
 
 // coldColor = document.querySelector("#coldColor");
 
