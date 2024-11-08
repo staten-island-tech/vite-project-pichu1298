@@ -82,7 +82,7 @@ dogButton.addEventListener("click", function (event) {
   dogItems.forEach((item) => {
     DOMSelectors.container.insertAdjacentHTML(
       "beforeend",
-      `<div class = "card">
+      `<div class = "card" id = "warm">
     <h1>${item.title}</h1>
     <img src="${item.image_url}" alt="${item.alt_text}">
     <ul>
@@ -102,7 +102,7 @@ catButton.addEventListener("click", function (event) {
   catItems.forEach((item) => {
     DOMSelectors.container.insertAdjacentHTML(
       "beforeend",
-      `<div class = "card">
+      `<div class = "card" id = "warm">
     <h1>${item.title}</h1>
     <img src="${item.image_url}" alt="${item.alt_text}">
     <ul>
@@ -286,12 +286,35 @@ petSmartButton.addEventListener("click", function (event) {
     );
   });
 });
-// coldColor = document.querySelector("#coldColor");
 
-// coldColor.addEventListener("submit", function (coldColorFunction) {
-//   coldColorFunction.preventDefault();
-//   document.insertAdjacentHtml("")
-// });
+let resetButton = document.querySelector("#reset");
+resetButton.addEventListener("click", function (event) {
+  event.preventDefault();
+  createdSorted();
+  for (let i = 0; i < petCareItems.length; i++) {
+    DOMSelectors.container.insertAdjacentHTML(
+      "beforeend",
+      `<div class = "card" id = "warm">
+  <h1>${petCareItems[i].title}</h1>
+  <img src="${petCareItems[i].image_url}" alt="${petCareItems[i].alt_text}">
+  <ul>
+    <li>Price: $${petCareItems[i].price} </li>
+    <li>Store(s): ${petCareItems[i].stores}</li>
+    <li>Animal(s): ${petCareItems[i].animal}</li>
+  </ul>
+  </div>`
+    );
+  }
+});
+
+let coldColor = document.querySelector("#coldColor");
+
+coldColor.addEventListener("submit", function (event) {
+  event.preventDefault();
+  DOMSelectors.card.innerHTML = "";
+
+  //load new array
+});
 
 // import javascriptLogo from './javascript.svg'
 // import viteLogo from '/vite.svg'
