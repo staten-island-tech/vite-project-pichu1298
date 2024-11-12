@@ -7,11 +7,11 @@
     --h1: 7.594rem;
   }
   
-  .warm{
+  #warm{
     --primary: var(--light-red);
     --secondary:var(--dark-red);
   }
-  .cool{
+  #cold{
     --primary: var(--light-blue);
     --secondary: var(--dark-blue);
   }

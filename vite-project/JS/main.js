@@ -1,6 +1,6 @@
 import "../CSS/style.css";
 import { petCareItems } from "./products.js";
-
+let currentColor = "warm";
 // const cat = petCareItems.forEach(petCareItems.animal === "Cat");
 
 // const hamster = petCareItems.forEach(petCareItems.animal === "Hamster");
@@ -37,7 +37,7 @@ const DOMSelectors = {
 for (let i = 0; i < petCareItems.length; i++) {
   DOMSelectors.container.insertAdjacentHTML(
     "beforeend",
-    `<div class = "card">
+    `<div class = "card" id = "${currentColor}">
 <h1>${petCareItems[i].title}</h1>
 <img src="${petCareItems[i].image_url}" alt="${petCareItems[i].alt_text}">
 <ul>
@@ -82,7 +82,7 @@ dogButton.addEventListener("click", function (event) {
   dogItems.forEach((item) => {
     DOMSelectors.container.insertAdjacentHTML(
       "beforeend",
-      `<div class = "card" id = "warm">
+      `<div class = "card" id = "${currentColor}">
     <h1>${item.title}</h1>
     <img src="${item.image_url}" alt="${item.alt_text}">
     <ul>
@@ -102,7 +102,7 @@ catButton.addEventListener("click", function (event) {
   catItems.forEach((item) => {
     DOMSelectors.container.insertAdjacentHTML(
       "beforeend",
-      `<div class = "card" id = "warm">
+      `<div class = "card" id = "${currentColor}">
     <h1>${item.title}</h1>
     <img src="${item.image_url}" alt="${item.alt_text}">
     <ul>
@@ -122,7 +122,7 @@ hamsterButton.addEventListener("click", function (event) {
   hamsterItems.forEach((item) => {
     DOMSelectors.container.insertAdjacentHTML(
       "beforeend",
-      `<div class = "card">
+      `<div class = "card" id = "${currentColor}">
     <h1>${item.title}</h1>
     <img src="${item.image_url}" alt="${item.alt_text}">
     <ul>
@@ -162,7 +162,7 @@ rabbitButton.addEventListener("click", function (event) {
   rabbitItems.forEach((item) => {
     DOMSelectors.container.insertAdjacentHTML(
       "beforeend",
-      `<div class = "card">
+      `<div class = "card" id = "${currentColor}">
     <h1>${item.title}</h1>
     <img src="${item.image_url}" alt="${item.alt_text}">
     <ul>
@@ -182,7 +182,7 @@ fishButton.addEventListener("click", function (event) {
   fishItems.forEach((item) => {
     DOMSelectors.container.insertAdjacentHTML(
       "beforeend",
-      `<div class = "card">
+      `<div class = "card" id = "${currentColor}">
     <h1>${item.title}</h1>
     <img src="${item.image_url}" alt="${item.alt_text}">
     <ul>
@@ -204,7 +204,7 @@ petcoButton.addEventListener("click", function (event) {
   fromPetco.forEach((item) => {
     DOMSelectors.container.insertAdjacentHTML(
       "beforeend",
-      `<div class = "card">
+      `<div class = "card" id = "${currentColor}">
     <h1>${item.title}</h1>
     <img src="${item.image_url}" alt="${item.alt_text}">
     <ul>
@@ -228,7 +228,7 @@ amazonButton.addEventListener("click", function (event) {
   fromAmazon.forEach((item) => {
     DOMSelectors.container.insertAdjacentHTML(
       "beforeend",
-      `<div class = "card">
+      `<div class = "card" id = "${currentColor}">
     <h1>${item.title}</h1>
     <img src="${item.image_url}" alt="${item.alt_text}">
     <ul>
@@ -274,7 +274,7 @@ petSmartButton.addEventListener("click", function (event) {
   fromPetSmart.forEach((item) => {
     DOMSelectors.container.insertAdjacentHTML(
       "beforeend",
-      `<div class = "card">
+      `<div class = "card" id = "${currentColor}">
     <h1>${item.title}</h1>
     <img src="${item.image_url}" alt="${item.alt_text}">
     <ul>
@@ -294,7 +294,7 @@ resetButton.addEventListener("click", function (event) {
   for (let i = 0; i < petCareItems.length; i++) {
     DOMSelectors.container.insertAdjacentHTML(
       "beforeend",
-      `<div class = "card" id = "warm">
+      `<div class = "card" id = "${currentColor}">
   <h1>${petCareItems[i].title}</h1>
   <img src="${petCareItems[i].image_url}" alt="${petCareItems[i].alt_text}">
   <ul>
@@ -309,11 +309,30 @@ resetButton.addEventListener("click", function (event) {
 
 let coldColor = document.querySelector("#coldColor");
 
-coldColor.addEventListener("submit", function (event) {
+coldColor.addEventListener("click", function (event) {
   event.preventDefault();
-  DOMSelectors.card.innerHTML = "";
+  currentColor = "cold";
+  const elements = document.querySelectorAll("#warm"); // Returns a NodeList of elements with id="warm"
 
-  //load new array
+  elements.forEach((element) => {
+    element.setAttribute("id", "cold"); // Set each element's id to "cold"
+  });
+
+  // Load new array or any other actions
+});
+
+let warmColor = document.querySelector("#warmColor");
+
+warmColor.addEventListener("click", function (event) {
+  event.preventDefault();
+  currentColor = "warm";
+  const elements = document.querySelectorAll("#cold"); // Returns a NodeList of elements with id="cold"
+
+  elements.forEach((element) => {
+    element.setAttribute("id", "warm"); // Set each element's id to "warm"
+  });
+
+  // Load new array or any other actions
 });
 
 // import javascriptLogo from './javascript.svg'

@@ -24,7 +24,7 @@ body{
   background-color: var(--primary);
 }
 img {
-  size: 100%;
+  width: 90%;
 }
 button{
   background-color: var(--secondary);
@@ -40,9 +40,11 @@ button{
   justify-content: center;
 }
 .card{
+  background-color: var(--secondary);
   width: 30%;
   margin: 3%;
 }
+
 
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
